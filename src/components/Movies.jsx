@@ -2,11 +2,11 @@ export function ListOfMovies({ movies }) {
   return (
     <ul className="movies">
       {
-        movies.map(({ id, title, year, poster }) => (
+        movies.map(({ id, title, year, image }) => (
           <li className="movie" key={id}>
             <h3>{title}</h3>
             <p>{year}</p>
-            <img src={poster} alt={title} />
+            <img src={image} alt={title} />
           </li>
         ))
       }
